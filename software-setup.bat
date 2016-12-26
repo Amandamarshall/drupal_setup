@@ -6,6 +6,8 @@ cinst nodejs -y
 cinst npm -y
 :: Instal 7zip
 cinst 7zip -y
+:: Install wget
+cinst wget -y
 :: Install PHPStorm
 cinst phpstorm -y
 :: Install Atom as on editor option
@@ -47,16 +49,7 @@ cgr behat/mink
 cd %HOME%\.composer\global\behat
 mkdir drupalextension
 cd drupalextension/
-cat << EOT > composer.json
-{
-  "require": {
-    "drupal/drupal-extension": "~3.0"
-},
-  "config": {
-    "bin-dir": "bin/"
-  }
-}
-EOT
+wget -N https://github.com/greggmarshall/drupal_setup/raw/master/composer.json
 composer install
 ln -s /opt/drupalextension/bin/behat /usr/local/bin/behat
 cd ~
