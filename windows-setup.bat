@@ -1,6 +1,11 @@
-:: Manually install cmdr from http://cmder.net/
+:: Manually install Babun from babun.github.io
+pause "Manually install Babun from babun.github.io"
+:: Or manually install cmdr from http://cmder.net/
 :: Manually install Dev Desktop from https://dev.acquia.com/downloads, programs to c:\DevDesktop\programs, sites to c:\DevDesktop\drupalsites
+pause "Manually install Dev Desktop from https://dev.acquia.com/downloads, programs to 
+c:\DevDesktop\programs, sites to c:\DevDesktop\drupalsites"
 :: Manually install Chocolately using @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+pause  "@powershell -NoProfile -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))\""
 :: Install Node.js and NPM
 cinst nodejs -y
 cinst npm -y
@@ -34,6 +39,7 @@ cinst gimp -y
 :: Install ESLint
 npm install -g eslint
 :: Edit the composer.bat and drush.bat batch files in C:\DevDesktop\Programs\tools to use fully qualified path to php programs
+pause "Edit the composer.bat and drush.bat batch files in C:\DevDesktop\Programs\tools to use fully qualified path to php programs"
 ::    php.exe C:\DevDesktop\Programs\tools\composer.phar %*
 ::    @php.exe "C:\DevDesktop\Programs\tools\vendor\drush\drush\drush.php" --php="php.exe" %*
 :: Install Composer GCR to resolve --global issues
