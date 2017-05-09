@@ -33,6 +33,8 @@ cinst vagrant -y
 cinst docker -y
 :: Install Filezilla for FTP
 cinst filezilla -y
+:: Install WinSCP as alternative to Filezilla
+cinst winscp -y
 :: Install Gimp
 cinst gimp -y
 :: Manually install memcached, using instructions at https://commaster.net/content/installing-memcached-windows, copy files into c:\cmdr\bin
