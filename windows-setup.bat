@@ -69,7 +69,7 @@ cgr "sebastian/phpcpd=*"
 :: Create a file C:\DevDesktop\Programs\tools\phpcpd.bat containing
 :: C:\DevDesktop\Programs\php5_5\php.exe %HOME%\.composer\global\sebastian\phpcpd\vendor\sebastian\phpcpd\composer\bin\phpcpd %*
 :: Install Coder and PHPCS
-cgr "sebastian/phpcs=*"
+cgr "squizlabs/php_codesniffer=*"
 cgr "drupal/coder"
 :: Create a file C:\DevDesktop\Programs\tools\phpcs.bat containing
 :: C:\DevDesktop\Programs\php5_5\php.exe %HOME%\.composer\global\drupal\coder\vendor\squizlabs\php_codesniffer\scripts\phpcs %*
