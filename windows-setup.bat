@@ -40,6 +40,11 @@ cinst gimp -y
 :: Manually install memcached, using instructions at https://commaster.net/content/installing-memcached-windows, copy files into c:\cmdr\bin
 :: Install ESLint
 npm install -g eslint
+:: Install Yarn for StyleLint
+cinst yarn -y
+:: Install StyleLint
+npm install -g stylelint
+:: To run styleline on all core css files >D8.4. Run the following command from DRUPAL_ROOT/ "yarn run lint:css"
 :: Edit the composer.bat and drush.bat batch files in C:\DevDesktop\Programs\tools to use fully qualified path to php programs
 pause "Edit the composer.bat and drush.bat batch files in C:\DevDesktop\Programs\tools to use fully qualified path to php programs"
 ::    php.exe C:\DevDesktop\Programs\tools\composer.phar %*
