@@ -32,6 +32,11 @@ brew cask install gimp
 brew install memcached
 # ESLint
 sudo npm install -g eslint
+# Yarn for Stylelint
+brew install yarn
+# Stylelint
+sudo npm install -g stylelint
+read -n1 -r -p "From DRUPAL_ROOT/core run 'yarn install' then 'yarn run lint:css'" key
 # Composer
 brew install homebrew/php/composer
 # Composer GCR to resolve --global issues
