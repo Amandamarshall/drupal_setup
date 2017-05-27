@@ -96,6 +96,16 @@ sudo systemctl restart apache2
 # ESLint
 sudo npm install -g eslint
 # may need to set up a configuration file with "eslint --init"
+# Yarn for Stylelint
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# Commands if node.js isn't new enough, probably not needed
+# curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+# sudo apt-get install -y nodejs
+sudo apt-get update && sudo apt-get install yarn
+# Stylelint
+sudo npm install -g stylelint
+read -n1 -r -p "From DRUPAL_ROOT/core run 'yarn install' then 'yarn run lint:css'" key
 # Composer
 sudo apt-get update -y
 sudo apt-get install php-mbstring git unzip -y
