@@ -2,7 +2,7 @@
 # Update OS and installed packages to start
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get-y  dist-upgrade
+sudo apt-get -y  dist-upgrade
 # use Firefox to download and install Chrome from google.com/chrome
 sudo apt install git
 # Node.js
@@ -12,7 +12,7 @@ sudo apt-get install -y nodejs
 # Replace open Java with Oracle Java
 sudo apt-get remove -y openjdk*
 sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update-y 
+sudo apt-get update -y 
 sudo apt-get install -y java-common oracle-java8-installer
 sudo apt-get install -y oracle-java8-set-default
 source /etc/profile
@@ -52,8 +52,8 @@ sudo VBoxManage extpack install /tmp/$file --replace
 # Vagrant
 sudo apt-get install vagrant
 # Docker
-sudo apt-get-y remove docker docker-engine
-sudo apt-get-y install apt-transport-https ca-certificates software-properties-common
+sudo apt-get -y remove docker docker-engine
+sudo apt-get -y install apt-transport-https ca-certificates software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
