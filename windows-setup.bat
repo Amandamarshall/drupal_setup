@@ -28,8 +28,9 @@ cinst virtualbox -y
 cinst VirtualBox.ExtensionPack -y
 :: Install vagrant
 cinst vagrant -y
-:: Install docker
-cinst docker -y
+:: Install docker, there are two options:  Docker for Windows which uses Hyper V and disables VirtualBox or Docker Toolbox
+:: cinst docker-for-windows -y
+cinst docker-toolbox -y
 :: Install Filezilla for FTP
 cinst filezilla -y
 :: Install WinSCP as alternative to Filezilla
