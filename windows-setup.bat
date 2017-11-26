@@ -7,8 +7,7 @@ c:\DevDesktop\programs, sites to c:\DevDesktop\drupalsites"
 :: Manually install Chocolately using @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 pause  "@powershell -NoProfile -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))\""
 :: Install Node.js and NPM
-cinst nodejs -y
-cinst npm -y
+cinst nodejs.install -y
 :: Instal 7zip
 cinst 7zip -y
 :: Install wget
