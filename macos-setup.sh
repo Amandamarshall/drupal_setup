@@ -4,7 +4,7 @@ read -n1 -r -p "Let XCode finish installing, then press space to continue..." ke
 # HomeBrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # HomeBrew Cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 # Node.js
 brew install node
 # PHPStorm
