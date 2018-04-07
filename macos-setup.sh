@@ -11,6 +11,8 @@ brew install node
 brew cask install phpstorm
 # Atom as lightweight editor
 brew cask install atom
+# Visual Studio Code as lightweight editor
+brew cask install visual-studio-code
 # Acquia Dev Desktop
 brew cask install acquia-dev-desktop
 # VirtualBox
