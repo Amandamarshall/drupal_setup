@@ -52,6 +52,7 @@ brew cask install colloquy
 brew cask install macdown
 # Pandoc universal document converter
 brew install pandoc
+brew install pandoc-citeproc
 # Basic TeX for PDF output from pandoc
 brew cask install basictex
 # Additional fonts
