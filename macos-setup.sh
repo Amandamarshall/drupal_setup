@@ -61,10 +61,14 @@ tlmgr install collection-fontsrecommended
 #    remove any existing copy of Drush
 brew remove --force drush
 cgr drush/drush:8.*
+# Drush 9
+mkdir ~/drush9
+cd ~/drush9
+composer require "drush/drush:9.*" 
 # Drush 8
 mkdir ~/drush8
 cd ~/drush8
-composer require drush/drush:dev-master
+composer require "drush/drush:8.*"
 # Drush 7
 mkdir ~/drush7
 cd ~/drush7
@@ -78,6 +82,7 @@ sudo cat << EOT >> ~/.bash_profile
 alias drush6='~/drush6/vendor/bin/drush'
 alias drush7='~/drush7/vendor/bin/drush'
 alias drush8='~/drush8/vendor/bin/drush'
+alias drush9='~/drush9/vendor/bin/drush'
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 EOT
 cd ~
