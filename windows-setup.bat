@@ -88,4 +88,4 @@ cinst SQlite -y
 cgr drupal/console:@stable
 :: Create a file C:\DevDesktop\Programs\tools\drupal.bat containing
 :: C:\DevDesktop\Programs\php5_5\php.exe %HOME%\.composer\global\drupal\console\vendor\drupal\console\bin\console %*
-:: Texts is a good markdown editor, no brew I see, but download at http://www.texts.io/
+:: Texts is a good markdown editor,  download at http://www.texts.io/
