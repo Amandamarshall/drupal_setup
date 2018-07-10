@@ -50,6 +50,7 @@ brew cask install skitch
 brew cask install colloquy
 # MacDown
 brew cask install macdown
+# Texts is another good markdown editor, no brew I see, but download at http://www.texts.io/
 # Pandoc universal document converter
 brew install pandoc
 brew install pandoc-citeproc
