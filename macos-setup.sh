@@ -4,13 +4,13 @@ read -n1 -r -p "Let XCode finish installing, then press space to continue..." ke
 # HomeBrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # HomeBrew Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 # Node.js
 brew install node
 # PHPStorm
 brew cask install phpstorm
 # Atom as lightweight editor
-brew cask install atom
+brew install --cask atom
 # Visual Studio Code as lightweight editor
 brew cask install visual-studio-code
 # Acquia Dev Desktop
@@ -21,7 +21,7 @@ brew cask install virtualbox-extension-pack
 # Vagrant
 brew cask install vagrant
 # Docker
-brew cask install docker
+brew install --cask docker
 # Cyberduck FTP
 brew cask install cyberduck
 # Firefox
@@ -40,7 +40,7 @@ brew install yarn
 sudo npm install -g stylelint
 read -n1 -r -p "From DRUPAL_ROOT/core run 'yarn install' then 'yarn run lint:css'" key
 # Composer
-brew install homebrew/php/composer
+brew install composer
 # Composer GCR to resolve --global issues
 # see https://pantheon.io/blog/fixing-composer-global-command
 composer global require consolidation/cgr
